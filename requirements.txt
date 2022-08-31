@@ -1,0 +1,11 @@
+anyio==3.6.1
+fastapi==0.81.0
+geographiclib==1.52
+geopy==2.2.0
+greenlet==1.1.3
+idna==3.3
+pydantic==1.10.1
+sniffio==1.2.0
+SQLAlchemy==1.4.40
+starlette==0.19.1
+typing_extensions==4.3.0
