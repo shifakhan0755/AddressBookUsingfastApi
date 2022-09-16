@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 import model
 import schema
 from geopy.geocoders import Nominatim
-from geopy.distance import great_circle,geodesic
+
 
 
 def get_address_by_address_id(db: Session, address_id: str):
@@ -53,7 +53,7 @@ def add_address_details_to_db(db: Session, address: schema.AddressAdd):
     mv_details = model.Addresses(
         address_id=address.address_id,
         name=address.name,
-        detailAddress=location.address,
+        detailAddress=address.detailAddress,
         country=address.country,
         state=address.state,
         city=address.city,
